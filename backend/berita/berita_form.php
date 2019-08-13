@@ -9,7 +9,7 @@
     }
     </script>
 <?php
-cek_status_login($_SESSION['email']); 
+cek_status_login($_SESSION['username']); 
 	$aksi = null;
 	if(isset($_GET['id'])) {
 		$aksi = "edit";

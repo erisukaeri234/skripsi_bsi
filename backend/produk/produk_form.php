@@ -1,6 +1,6 @@
 <?php
 	
-if(empty($_SESSION['email'])){
+if(empty($_SESSION['username'])){
 			echo "<p style='color:red'>akses denied</p>";
 		exit();		
 	}

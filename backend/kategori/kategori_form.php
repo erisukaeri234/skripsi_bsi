@@ -26,7 +26,7 @@ function MM_validateForm() { //v4.0
 //-->
 </script>
 <?php
- if(empty($_SESSION['email'])){
+ if(empty($_SESSION['username'])){
 			echo "<p style='color:red'>akses denied</p>";
 		exit();		
 	}

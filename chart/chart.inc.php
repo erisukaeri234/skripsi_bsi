@@ -96,12 +96,12 @@ function showchart() {
 			$harga += $row -> harga_jual   ;
 			$ongkir += $rw -> ongkir   ;
 	
-			$output[] = '<td><a href="index.php?mod=chart&pg=chart&action=delete&id=' . $id . '" class="btn btn-danger">Hapus</a></td></tr>';
+			$output[] = '<td><a href="index.php?mod=chart&pg=chart&action=delete&id=' . $id . '" class="btn btn-primary btn-lg filled ">Hapus</a></td></tr>';
 			$no++;
 		}
 		$output[] = "</table>";
 		$qty = getQty();
-
+ 
 
 		$output[] = '<h3>Total	Transaksi	: ' . format_rupiah($total) . '</h3>';
 
@@ -110,9 +110,9 @@ function showchart() {
 		$_SESSION['ongkir'] = $ongkir;
 		$_SESSION['totalbayar'] = $total;
 		$_SESSION['harga_jual'] = $harga;
-		$output[] = '<button type="submit" class=\'btn btn-primary\'>Update cart</button>';
+		$output[] = '<button type="submit" class=\'btn btn-primary btn-lg filled\'>Update cart</button>';
 		$output[] = '</form>';
-		$output[] ='<a href=\'chart/chart_action.php\' class=\'btn btn-primary\'>Check out</a>';
+		$output[] ='<a href=\'chart/chart_action.php\' class=\'btn btn-primary btn-lg filled\'>Check out</a>';
 	} else {
 		$output[] = '<p>Keranjang belanja masih kosong.</p>';
 	}

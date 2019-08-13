@@ -35,15 +35,19 @@ function MM_validateForm() { //v4.0
 
 	<!--kolom kiri-->
 
-		<h2> Form Konfirmasi Pembayaran</h2>
 		
+ <section id="contactRow" class="row contentRowPad">
+ 	 <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+ 	 <h2> Form Konfirmasi Pembayaran</h2>		
 <form  class="form-horizontal" method="POST" id="form1"  enctype="multipart/form-data"
 action="backend/produk/transfer_action.php">
 	<input type='hidden' name='idpelanggan' value="<?php echo $row['idpelanggan'] ?>">	
 	<div class="control-group">
 			<label class="control-label" for="noinvoice">No Invoice </label>
 			<div class="controls">
-				<input type="text" name='noinvoice' value='' class='required'
+				<input type="text" name='noinvoice' class="form-control" value='' class='required'
 				>
 			</div>
 		</div>
@@ -51,47 +55,44 @@ action="backend/produk/transfer_action.php">
 	<div class="control-group">
 			<label class="control-label" for="nama_rekening">Nama Rekening </label>
 			<div class="controls">
-				<input type="text" name='nama_rekening' value='' class='required'
+				<input class="form-control" type="text" name='nama_rekening' value='' class='required'
 				>
 			</div>
 		</div>
 	<div class="control-group">
 			<label class="control-label" for="bank">Bank Anda </label>
 			<div class="controls">
-				<input type="text" name='bank' value='' class='required'
+				<input type="text" class="form-control" name='bank' value='' class='required'
 				>
 			</div>
 		</div>
 	<div class="control-group">
 			<label class="control-label" for="rekening">Rekening anda </label>
 			<div class="controls">
-				<input type="text" name='rekening' value='' class='required'
+				<input type="text" name='rekening' class="form-control" value='' class='required'
 				>
 			</div>
 		</div>
 	<div class="control-group">
 			<label class="control-label" for="transfer">Nominal </label>
 			<div class="controls">
-				<input type="text" name='transfer' value='' class='required'
+				<input type="text" class="form-control" name='transfer' value='' class='required'
 				>
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="foto">Bukti Transfer</label>
+			<label class="control-label" class="form-control" for="foto">Bukti Transfer</label>
 			<div class="controls">
 				<input type="file" name='foto' 
 				>
 			</div>
-		</div>
-		
-
-		<div class="control-group">
-			<div class="controls">
-				<button type="submit" class="btn btn-success" name='aksi' onClick="MM_validateForm('noinvoice','','R','nama_rekening','','R','bank','','R','rekening','','R','transfer','','R','foto','','R');return document.MM_returnValue"  value='<?=$aksi?>'>
+		</div><br>
+				<button type="submit" class="btn btn-primary btn-lg filled" name='aksi' onClick="MM_validateForm('noinvoice','','R','nama_rekening','','R','bank','','R','rekening','','R','transfer','','R','foto','','R');return document.MM_returnValue"  value='<?=$aksi?>'>
 				<?=$aksi?>
 				</button>
-			</div>
-		</div>
 
 </form>
 </div>
+</div>
+</div>
+</section>

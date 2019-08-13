@@ -6,8 +6,8 @@
  */
 cek_status_login($_SESSION['idpelanggan']);
 ?>
-<section class="main-content">
-
+ <section id="contactRow" class="row contentRowPad">
+ 	 <div class="container">
 	<div class="row">
 		<div class="span9">
 	<h2 id="headings"> Profile</h2>
@@ -50,8 +50,6 @@ while($rows=mysql_fetch_object($result)){
 
 	
 </div>
-<?php
-include('inc/sidebar-front.php');
-?>
+
 	</div>
 </section>	

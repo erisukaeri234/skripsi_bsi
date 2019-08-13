@@ -160,14 +160,14 @@
 									laporan Periode Transaksi								</a>
 							</li>	
 					</li>
-
+<!-- 
 							<li>
 						<a href="#" class="dropdown-toggle">
 							<i class="icon-cog"></i>
 							<span> Setting</span>
 
 							<b class="arrow icon-angle-down"></b>
-						</a>
+						</a> -->
 
 						<ul class="submenu">
 						<li>

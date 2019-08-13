@@ -1,6 +1,6 @@
 	<head>
 		<meta charset="utf-8" />
-		<title>Dashboard  - Admin Page </title>
+		<title>Admin</title>
 		<meta name="description" content="This is page-header (.page-header &gt; h1)" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -27,12 +27,6 @@
 		<link rel="stylesheet" href="../assets/themes-back/css/w8.min.css" />
 		<link rel="stylesheet" href="../assets/themes-back/css/w8-responsive.min.css" />
 		<link rel="stylesheet" href="../assets/themes-back/css/w8-skins.min.css" />
-
-		<!--[if lte IE 8]>
-		  <link rel="stylesheet" href="../assets/themes-back/css/ace-ie.min.css" />
-		<![endif]-->
-
-		<!--inline styles if any-->
 		<script src='../assets/themes-back/js/jquery.min.js'></script>
 		</script>
 		<script src="../assets/bootstrap/js/jquery.validate.js"></script>

@@ -4,8 +4,8 @@ require('../fpdf/fpdf.php');
 
 $host="localhost";
 $user="root";
-$pass="root";
-$db="dbskripsi";
+$pass="";
+$db="penjualan_kopi";
 
 $entries=10;
 $waktu=date("Y-m-d H:i:s");
@@ -58,10 +58,10 @@ $pdf->AddPage();
 $pdf->SetFont ('arial','B','14');
 //Mencetak Huruf di Dalam File
 $pdf->setXY(85,15);
-$pdf->Cell(40,20,'MAKMUR SERVICE ELEKTRONIK');
+$pdf->Cell(40,20,'KURIR KOPI');
 $pdf->setFont('Arial','B',12);
 $pdf->setXY(55,15);
-$pdf->Cell(30,30,'Jl. Raya Rajek/guharajek rt.001/004 kec.Rajek Kab. Tangerang- Banten');
+$pdf->Cell(30,30,'Kp. Cihampelas RT/RW 01 05 Desa Sindang sari Kec.Pesah Kab. Bandung');
 $pdf->setXY(123,15);
 $pdf->setFont('Arial','B',10);
 $pdf->setXY(90,34);

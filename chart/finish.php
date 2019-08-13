@@ -1,7 +1,6 @@
-<section class="main-content">
-
-	<div class="row">
-		<div class="span9">
+<section id="contactRow" class="row contentRowPad">
+        <div class="container">
+            <div class="row">
 <div class='span8 offset1'>	
 <?php
 $kd_transaksi = $_GET['kd_transaksi'];
@@ -35,8 +34,5 @@ $totalBayar = $_GET['total_bayar'];?>
 </p>
 </div>		
 		</div>
-<?php
-include('inc/sidebar-front.php');
-?>
 	</div>
 </section>		

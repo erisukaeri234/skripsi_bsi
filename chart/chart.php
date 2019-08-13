@@ -65,10 +65,9 @@ switch ($action) {
 $_SESSION['chart'] = $chart;
 ?>
 
-<section class="main-content">
-
-	<div class="row">
-		<div class="span9">
+<section id="contactRow" class="row contentRowPad">
+ 	 <div class="container">
+            <div class="row">
 
 			<?php echo writeShoppingchart();
 
@@ -84,9 +83,6 @@ $_SESSION['chart'] = $chart;
 			?>
 			
 		</div>
-		<?php
-		include ('inc/sidebar-front.php');
-		?>
 	</div>
 </section>
 

@@ -20,13 +20,13 @@ include('../inc/header-back.php');
 					<a href="#" class="brand">
 						<small>
 							<i class="icon-desktop"></i>
-						Makmur Electronik
+						Kurir Kopi
 						</small>
 					</a><!--/.brand-->
 
 					<ul class="nav ace-nav pull-right">
 						<?php 
-						if (isset($_SESSION[email])){ ?>
+						if (isset($_SESSION[username])){ ?>
 						<li>	<a href="login/logout.php">
 									<i class="icon-off"></i>
 									Logout
@@ -45,7 +45,7 @@ include('../inc/header-back.php');
 <!--sidebar-->			
 <div id="sidebar">
 <?php
-if(isset($_SESSION['email'])){
+if(isset($_SESSION['username'])){
 include('../inc/sidebar-back.php');
 }
 ?>

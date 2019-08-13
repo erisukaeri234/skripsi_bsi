@@ -59,7 +59,7 @@ while($rows = mysql_fetch_object($result)) {
 						</p>
 						<?php
 						if(!empty($_SESSION['idpelanggan']) && ($rows->jumlah>0)){ ?>
-						<a href='index.php?mod=chart&pg=chart&action=add&id=<?=$rows->idproduk?>' class='btn btn-warning'><i class='icon-shopping-cart icon-white'></i>Beli</a>
+						<a href='index.php?mod=chart&pg=chart&action=add&id=<?=$rows->idproduk?>' class='btn btn-primary btn-lg filled'><i class='icon-shopping-cart icon-white'></i>Beli</a>
 						<?php } ?>
 					</div>
 				</li>
